@@ -1,0 +1,1 @@
+// the ResumeGenerator.jsx is the app.jsx here which were importing and rendering in the main.jsx //

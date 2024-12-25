@@ -1,0 +1,48 @@
+/* Container for the header to control visibility */
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Significantly reduced height */
+    z-index: 999; /* Ensure it's on top of other content */
+    background-color: transparent; /* Initially make it invisible */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Header styles */
+  .header {
+    width: 100%;
+    background-color: #333; /* Dark background for the header */
+    color: white; /* White text for readability */
+    padding: 4px 8px; /* Reduced padding even further */
+    display: flex;
+    justify-content: flex-end; /* Positioning the sign-up button on the right */
+    align-items: center;
+    visibility: hidden; /* Hidden initially */
+    transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  /* Button Style */
+  .signup-button {
+    padding: 2px 6px; /* Reduced padding for a more compact button */
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 10px; /* Even smaller font size */
+    size: 10px;
+  }
+  
+  .signup-button:hover {
+    background-color: #218838; /* Darken the button color on hover */
+  }
+  
+  /* Show the header only when hovering the container */
+  .header-container:hover .header {
+    visibility: visible;
+    opacity: 1;
+  }
+  
